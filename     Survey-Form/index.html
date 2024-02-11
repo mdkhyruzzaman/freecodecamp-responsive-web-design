@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey From</title>
+    <link rel='stylesheet' href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thanks for your valuable time.</p>
+        </div>
+        <form id="survey-form" action="#" method="post">
+            <fieldset>
+                <label id="name-label" for="name">Name:</label>
+                <input class="input-radius" id="name" type="text" placeholder="Enter your name" required>
+                <label id="email-label" for="email">Email: </label>
+                <input class="input-radius" id="email" type="email" required placeholder="Enter your email">
+                <label id="number-label" for="number">Age: </label>
+                <input class="input-radius" id="number" type="number" min="18" max="45" placeholder="Enter your age">
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">Education:</label>
+                <select id="dropdown" class="input-radius">
+                    <option value="" disabled>select one</option>
+                    <option value="">Bachelor</option>
+                    <option value="">Master</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Job Type(Interest):</legend>
+                <label for="part-time"><input type="radio" name="job-type" id="part-time" value="part-time"> Part Time</label>
+                <label for="full-time"><input type="radio" id="full-time" name="job-type" value="full-time" checked> Full Time</label>
+            </fieldset>
+            <fieldset>
+                <legend>Interest Job Field:</legend>
+                <label for="wd">
+                    <input type="checkbox" name="job-field" id="wd" value="wd"> Web Development
+                </label>
+                <label for="sd">
+                    <input type="checkbox" name="job-field" id="sd" value="sd"> Software Development
+                </label>
+                <label for="dm">
+                    <input type="checkbox" name="job-field" id="dm" value="dm"> Digital Marketing
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="other">Others:</label>
+                <textarea name="" id="other" cols="30" rows="10"></textarea>
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

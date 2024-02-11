@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e8e8e8;
+    background-image: linear-gradient(#e8e8e8bb, #e8e8e8bb), url(https://img.freepik.com/free-vector/tiny-cartoon-business-partners-planning-budget_74855-20383.jpg);
+    background-size: cover;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2rem;    
+    width: 100%;
+}
+
+#header{
+    padding: 25px 0;
+}
+
+#title, #description {
+    text-align: center;
+}
+
+/* From Section */
+#survey-form {
+    min-width: 300px;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #afafafcc;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+}
+
+label, legend {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-radius {
+    border-radius: 5px;
+}
+
+input, textarea, select {
+    font-size: 1.2rem;
+    border: none;
+}
+
+input[type="checkbox"],  input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#name, #email, #number, #dropdown, textarea, #submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: .5rem;
+    margin-bottom: 1.2rem;
+}
+
+#submit {
+    background-color: #01817b;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+#submit:hover {
+    background-color: #00a8a0;
+}
