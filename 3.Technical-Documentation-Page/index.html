@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <nav id="navbar">
+      <header>
+        <h1>Python Documentation</h1>
+      </header>
+        <ul>
+          <li><a href="#introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#history" class="nav-link">History</a></li>
+          <li><a href="#design_philosophy_and_features" class="nav-link">Design philosophy and features</a></li>
+          <li><a href="#syntax_and_semantics" class="nav-link">Syntax and semantics</a></li>
+          <li><a href="#languages_influenced_by_python" class="nav-link">Languages influenced by Python</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="introduction" class="main-section">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <div>
+          <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+          <p>Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.</p>
+          <p>Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.[34] Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.</p>
+          <p>Python consistently ranks as one of the most popular programming languages, and has gained widespread use in the machine learning community.</p>
+        </div>
+      </section>
+      <section id="history" class="main-section">
+        <header>
+          <h2>History</h2>
+        </header>
+          <div>
+            <p>Python was conceived in the late 1980s[40] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC programming language, which was inspired by SETL,[41] capable of exception handling and interfacing with the Amoeba operating system.[10] Its implementation began in December 1989.[42] Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his "permanent vacation" from his responsibilities as Python's "benevolent dictator for life", a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker.[43] In January 2019, active Python core developers elected a five-member Steering Council to lead the project.</p>
+            <p>Python 2.0 was released on 16 October 2000, with many major new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.[46] Python 3.0, released on 3 December 2008, with many of its major features backported to Python 2.6.x[47] and 2.7.x. Releases of Python 3 include the 2to3 utility, which automates the translation of Python 2 code to Python 3.</p>
+            <p>Python 2.7's end-of-life was initially set for 2015, then postponed to 2020 out of concern that a large body of existing code could not easily be forward-ported to Python 3.[49][50] No further security patches or other improvements will be released for it.[51][52] Currently only 3.8 and later are supported (2023 security issues were fixed in e.g. 3.7.17, the final 3.7.x release[53]). While Python 2.7 and older is officially unsupported, a different unofficial Python implementation, PyPy, continues to support Python 2, i.e. "2.7.18+" (plus 3.9 and 3.10), with the plus meaning (at least some) "backported security updates".</p>
+            <p>In 2021 (and again twice in 2022), security updates were expedited, since all Python versions were insecure (including 2.7[55]) because of security issues leading to possible remote code execution[56] and web-cache poisoning.[57] In 2022, Python 3.10.4 and 3.9.12 were expedited[58] and 3.8.13, because of many security issues.[59] When Python 3.9.13 was released in May 2022, it was announced that the 3.9 series (joining the older series 3.8 and 3.7) would only receive security fixes in the future.[60] On 7 September 2022, four new releases were made due to a potential denial-of-service attack: 3.10.7, 3.9.14, 3.8.14, and 3.7.14.</p>
+            <p>As of October 2023, Python 3.12 is the stable release, and 3.12 and 3.11 are the only versions with active (as opposed to just security) support. Notable changes in 3.11 from 3.10 include increased program execution speed and improved error reporting.</p>
+            <p>Python 3.12 adds syntax (and in fact every Python since at least 3.5 adds some syntax) to the language, the new (soft) keyword type (recent releases have added a lot of typing support e.g. new type union operator in 3.10), and 3.11 for exception handling, and 3.10 the match and case (soft) keywords, for structural pattern matching statements. Python 3.12 also drops outdated modules and functionality, and future versions will too, see below in Development section.</p>
+            <p>Python 3.11 claims to be between 10 and 60% faster than Python 3.10, and Python 3.12 adds another 5% on top of that. It also has improved error messages, and many other changes.</p>
+            <p>Since 27 June 2023, Python 3.8 is the oldest supported version of Python (albeit in the 'security support' phase), due to Python 3.7 reaching end-of-life.</p>
+          </div>
+      </section>
+      <section id="design_philosophy_and_features" class="main-section">
+        <header>
+          <h2>Design philosophy and features</h2>
+        </header>
+        <div>
+          <p>Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of their features support functional programming and aspect-oriented programming (including metaprogramming and metaobjects) .Many other paradigms are supported via extensions, including design by contract and logic programming.</p>
+          <p>Its core philosophy is summarized in the Zen of Python (PEP 20), which includes aphorisms such as:</p>
+          <ul>
+            <li>Beautiful is better than ugly.</li>
+            <li>Explicit is better than implicit.</li>
+            <li>Simple is better than complex.</li>
+            <li>Complex is better than complicated.</li>
+            <li>Readability counts.</li>
+          </ul>
+        </div>
+      </section>
+      <section id="syntax_and_semantics" class="main-section">
+        <header>
+          <h2>Syntax and semantics</h2>
+        </header>
+        <div>
+          <ul>
+            <li>The <code>if</code> statement, which conditionally executes a block of code, along with <code>else</code> and <code>elif</code> (a contraction of else-if)</li>
+            <li>The <code>for</code> statement, which iterates over an iterable object, capturing each element to a local variable for use by the attached block</li>
+            <li>The <code>while</code> statement, which executes a block of code as long as its condition is true</li>
+            <li>The <code>def</code>statement, which defines a function or method</li>
+          </ul>
+        </div>
+      </section>
+      <section id="languages_influenced_by_python" class="main-section">
+        <header>
+          <h2>Languages influenced by Python</h2>
+        </header>
+      </section>
+    </main>
+    </div>
+  </body>
+</html>
