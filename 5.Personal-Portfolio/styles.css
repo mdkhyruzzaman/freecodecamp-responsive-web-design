@@ -17,6 +17,19 @@ body {
     box-sizing: border-box;
 }
 
+#projects, #footer {
+    padding: 5rem 3rem;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 #navbar {
     background-color: var(--primary-color1);
     position: fixed;
@@ -32,13 +45,8 @@ body {
     margin: 0 20px;
 }
 
-#navbar ul li {
-    list-style-type: none;
-}
-
 #navbar ul li a {
     color: var(--primary-color2);
-    text-decoration: none;
     font-size: 1.2rem;
     padding: 15px 30px;
     display: inline-block;
@@ -70,12 +78,10 @@ body {
 #projects {
     background-color: var(--primary-color3);
     color: var(--primary-color2);
-    padding: 5rem 3rem;
 }
 
 #projects h2{
     font-size: 2rem;
-    text-align: center;
 }
 
 .border-bottom {
@@ -87,9 +93,98 @@ body {
 
 a.project-link {
     color: var(--primary-color2);
+    background: var(--primary-color1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+#project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+#project-gallery .project-img {
+    width: 100%;
 }
 
 .project-title {
-    display: inline-block;
-    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+}
+
+.code {
+    color: var(--primary-color1);
+    transition: all 0.3s ease-out;
+    margin: 0 1rem;
+  }
+
+a:hover .code {
+    color: var(--primary-color3);
+}
+
+#contact {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--primary-color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2{
+    font-size: 3rem;
+}
+
+#contact p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+}
+
+#contact ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 8vh;
+    min-height: 40px;
+    background-color: var(--primary-color3);
+    color: var(--primary-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: var(--primary-color2);
+}
+
+footer a:hover {
+    text-decoration: dashed;
+}
+
+@media only screen and (max-width: 768px) {
+    #project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+    #project-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #contact h2{
+        font-size: 2rem;
+    }
 }
