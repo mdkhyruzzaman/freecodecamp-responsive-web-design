@@ -149,7 +149,30 @@ a:hover .code {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
+}
+
+#contact ul a {
+    color: var(--primary-color3);
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: all .2s;
+}
+
+#contact ul a:hover {
+    transform: scale(1.2);
+}
+
+#contact ul a:hover#facebook {
+    color: #1877F2;
+}
+
+#contact ul a:hover#linkedin {
+    color: #0A66C2;
+}
+
+#contact ul a:hover#youtube {
+    color: #FF0000;
 }
 
 footer {
@@ -186,5 +209,8 @@ footer a:hover {
     }
     #contact h2{
         font-size: 2rem;
+    }
+    #contact ul {
+        flex-direction: column;
     }
 }
